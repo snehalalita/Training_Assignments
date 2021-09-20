@@ -37,7 +37,7 @@ namespace FlyHighAirlines
 
 
             double addcost = 2 * count;
-            Console.WriteLine("Additional Cost to be paid is Rs." + addcost);
+            Console.WriteLine("Additional Cost to be paid is " + addcost);
             return addcost;
         }
     }

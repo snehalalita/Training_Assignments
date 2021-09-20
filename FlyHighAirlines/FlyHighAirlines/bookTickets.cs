@@ -39,7 +39,7 @@ namespace FlyHighAirlines
         }
         public int price(int cl)
         {
-            int[] p = { 2000, 4000, 6000 };
+            int[] p = { 6000, 4000, 2000 };
             return p[cl - 1];
         }
     }

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{BCA0C1C4-FE8F-418F-9655-3C778E01EE1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChordFileGenerator", "ChordFileGenerator\ChordFileGenerator.csproj", "{D500DB05-5C95-4EF6-A3F5-A4708642BE3A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BCA0C1C4-FE8F-418F-9655-3C778E01EE1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCA0C1C4-FE8F-418F-9655-3C778E01EE1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCA0C1C4-FE8F-418F-9655-3C778E01EE1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCA0C1C4-FE8F-418F-9655-3C778E01EE1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D500DB05-5C95-4EF6-A3F5-A4708642BE3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D500DB05-5C95-4EF6-A3F5-A4708642BE3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D500DB05-5C95-4EF6-A3F5-A4708642BE3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D500DB05-5C95-4EF6-A3F5-A4708642BE3A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BF897325-7FA4-465F-A21D-14389C37D895}
+	EndGlobalSection
+EndGlobal

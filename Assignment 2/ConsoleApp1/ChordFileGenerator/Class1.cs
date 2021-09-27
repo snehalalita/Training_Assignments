@@ -22,38 +22,41 @@ namespace ChordFileGenerator
             lines = new List<string>();
             lines.Add("Song Name:" + SongName);
             lines.Add("Artist Name:" + Artist);
+            lines.Add("File Type:" + fileType);
         }
 
         public void add_lyric(string lyrics)
         {
             lines.Add(lyrics);
-            Console.WriteLine("added lyrics");
+            Console.WriteLine("Lyrics added");
         }
 
         public void add_chord(string chords, string lyrics)
         {
             lines.Add(chords);
             lines.Add(lyrics);
-            Console.WriteLine("added chords and lyrics");
+            Console.WriteLine("Chords and lyrics added");
         }
 
         public void save_file(string location)
         {
             //File.Create(@"C:\Training\Training_Assignments\Assignment 2\ConsoleApp1\" + location);
             File.WriteAllLines(@"C:\Training\Training_Assignments\Assignment 2\ConsoleApp1\" + location, lines);
-            Console.WriteLine("File Saved.");
+            Console.WriteLine("\nFile Saved.");
         }
 
-        public string file_contents()
+        public void file_contents(string location)
         {
-            return "File Contents";
+            string contents=File.ReadAllText(@"C:\Training\Training_Assignments\Assignment 2\ConsoleApp1\" + location);
+            Console.WriteLine("File contents\n **************************");
+            Console.WriteLine(contents);
         }
 
         public enum FileType
         {
             Chords,
             Tab,
-            Lyrics
+            Lyrics,
         }
 
     }

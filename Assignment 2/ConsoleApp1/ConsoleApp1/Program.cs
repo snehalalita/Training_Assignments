@@ -32,11 +32,17 @@ namespace ConsoleApp1
 
         public static object access_enum(Type enumtype,string enumitemname)
         {
-            return 1;
+            string[] enumnames=enumtype.GetEnumNames();
+            int i;
+            for (i=0; i<enumnames.Length; i++) {
+                if (enumnames[i] == enumitemname)
+                {
+                    object enumvalue = enumtype.GetEnumValues().GetValue(i);
+                    return enumvalue;
+                }        
+            }
+            return "";
         }
-
-
-
 
         static void Main(string[] args)
         {
@@ -46,27 +52,27 @@ namespace ConsoleApp1
 
             object obj=Activator.CreateInstance(type);
            
-            Console.WriteLine("Enter song name:");
+            Console.WriteLine("\nEnter song name:");
             string songname = Console.ReadLine();
 
             set_property(obj, "SongName", songname);
 
-            Console.WriteLine("Enter Artist Name:");
+            Console.WriteLine("\nEnter Artist Name:");
             string artistname = Console.ReadLine();
 
             set_property(obj, "Artist", artistname);
             call_method(obj, "create_file", null);
-            //Console.WriteLine("Enter file type:");
-            //string filetype = Console.ReadLine();
+            Console.WriteLine("\nEnter file type:Chords,Tab,Lyrics");
+            string filetype = Console.ReadLine();
 
-            //Type fileenum = typeof(ChordFileGenerator.Class1.FileType);
-            //object filevalue = access_enum(fileenum, filetype);
+            Type fileenum = typeof(ChordFileGenerator.Class1.FileType);
+            object filevalue = access_enum(fileenum, filetype);
 
-            //set_property(obj, "fileType", filevalue);
+            set_property(obj, "fileType", filevalue);
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Enter the type of line:");
+                Console.WriteLine("\nEnter the type of line:");
                 Console.WriteLine("1.Enter one lyric line:");
                 Console.WriteLine("2.Enter chord and line:");
                 Console.WriteLine("3.Exit");
@@ -85,8 +91,6 @@ namespace ConsoleApp1
                         string chord = Console.ReadLine();
                         string lyric = Console.ReadLine();
                         call_method(obj, "add_chord", new object[] { chord,lyric });
-                       
-
                         break;
                     case 3:
                         flag=false;
@@ -94,11 +98,11 @@ namespace ConsoleApp1
                     default: Console.WriteLine("Wrong entry.");
                         break;
                 }
-
             }
 
             call_method(obj, "save_file", new object[] { "test.txt" });
-
+            Console.WriteLine();
+            call_method(obj, "file_contents", new object[] { "test.txt" });
             Console.ReadLine();
 
         }

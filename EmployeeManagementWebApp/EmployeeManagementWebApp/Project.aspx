@@ -23,13 +23,25 @@
             </p></b>
             <table> 
                 <tr>
+                    <th class="auto-style1">Project Number 
+                        
+                    </th>
+                    <td class="auto-style1"> 
+                        
+                       
+                        <asp:Label ID="lblProjectNo" runat="server"></asp:Label>
+                       
+                    </td>
+                    
+                </tr>
+                <tr>
                     <th class="auto-style1">Project Name 
                         
                     </th>
                     <td class="auto-style1"> 
                         <asp:TextBox ID="txtProjectName" runat="server"></asp:TextBox>
                        
-                        <asp:Label ID="lblProjectNo" runat="server"></asp:Label>
+                        
                        
                     </td>
                     

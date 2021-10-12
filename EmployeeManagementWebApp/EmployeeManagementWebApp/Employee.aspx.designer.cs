@@ -42,15 +42,6 @@ namespace EmployeeManagementWebApp
         protected global::System.Web.UI.WebControls.Button btn_Project;
 
         /// <summary>
-        /// txtJobTitle control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtJobTitle;
-
-        /// <summary>
         /// lblEmployeeNumber control.
         /// </summary>
         /// <remarks>
@@ -58,6 +49,15 @@ namespace EmployeeManagementWebApp
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblEmployeeNumber;
+
+        /// <summary>
+        /// txtJobTitle control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtJobTitle;
 
         /// <summary>
         /// txtLastName control.

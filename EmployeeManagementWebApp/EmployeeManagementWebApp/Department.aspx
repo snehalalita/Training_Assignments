@@ -16,6 +16,16 @@
                 <asp:Button ID="btn_Employee" runat="server" OnClick="btn_Employee_Click" Text="Employee" />
             </p></b>
             <table>
+                 <tr>
+                    <th>Department Number
+                        
+                    </th>
+                    <td> 
+                        <asp:Label ID="lblDepartmentID" runat="server"></asp:Label>
+                       
+                    </td>
+                    
+                </tr>
                 <tr>
                     <th>Department Name 
                         
@@ -23,7 +33,7 @@
                     <td> 
                         <asp:TextBox ID="txtDepartmentName" runat="server"></asp:TextBox>
                        
-                        <asp:Label ID="lblDepartmentID" runat="server"></asp:Label>
+                        
                        
                     </td>
                     

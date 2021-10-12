@@ -9,19 +9,25 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <p style="margin-left: 160px">
+            <b><p style="margin-left: 160px">
                 EMPLOYEE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <asp:Button ID="btn_Department" runat="server" OnClick="btn_Department_Click" Text="Department" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <asp:Button ID="btn_Project" runat="server" OnClick="btn_Project_Click" Text="Project" />
             <br />
-            </p>
+            </p></b>
             <table>
+                <tr>
+                    <th>Employee Number</th>
+                    <td>
+                         <asp:Label ID="lblEmployeeNumber" runat="server"></asp:Label>
+                    </td>
+                </tr>
                 <tr>
                     <th>Job Title</th>
                     <td>
                         <asp:TextBox ID="txtJobTitle" runat="server"></asp:TextBox>
-                        <asp:Label ID="lblEmployeeNumber" runat="server"></asp:Label>
+                       
                     </td>
                 </tr>
                 <tr>

@@ -1,0 +1,47 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="eventmanagement.master.cs" Inherits="EventManagement.eventmanagement" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+       <div>
+            <div class="navbar navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                   
+                    <a class="navbar-brand" runat="server" href="~/">Event Management</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li> <asp:LinkButton ID="lbtnbookingstatus" runat="server" ForeColor="#3333FF" OnClick="lbtnbookingstatus_Click">Booking Status</asp:LinkButton>
+</li>
+                        <li>  <asp:LinkButton ID="lbtnprofile" runat="server" Text="Profile" OnClick="lbtnprofile_Click"></asp:LinkButton></asp:HyperLink>
+</li>
+                        <li> <asp:LinkButton ID="txtlinktofoodordering"  Cssclass="nlink" runat="server" PostBackUrl="~/FoodOrder.aspx">Food Ordering</asp:LinkButton>
+</li>
+                        <li> <asp:LinkButton ID="txtlinktoflowers"  Cssclass="nlink" runat="server" PostBackUrl="~/Flowers.aspx">Flowers Booking</asp:LinkButton>
+ </li>
+    
+                    </ul>
+               
+                 <ul class="nav navbar-nav navright">
+        <li><asp:LinkButton ID="txtlogout"  Cssclass="nlink" runat="server" PostBackUrl="~/LoginPage.aspx">Logout</asp:LinkButton>
+   </li>
+            </ul>
+                     </div>
+            </div>
+        </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+         
+                
+        </div>
+    </form>
+</body>
+</html>

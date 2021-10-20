@@ -1,0 +1,48 @@
+﻿body {
+    background-color: #7ED5EA;
+}
+
+#cont {
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+tr {
+}
+
+.txtInput {
+    border-radius: 5px;
+    margin-left: 10px;
+    width: 300px;
+}
+
+.txtButton {
+    background-color: #28559A;
+    color: white;
+    margin: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.nav {
+    color: white;
+}
+
+.navbar {
+    background-color: #05386b;
+}
+
+.nlink {
+    font-weight: 600;
+    font-size: 15px;
+    margin-left: 20px;
+    color: white;
+}
+
+.navright {
+    float: right;
+    margin-right: 20px;
+}

@@ -6,3 +6,4 @@ c# Training Handson- https://github.com/snehalalita/csharpTraining.git
 * Assignment 2 (27/09/2021) - ChordFileGenerator (Reflection)
 * Sql Presentation (04/09/2021) - Stored Procedures https://github.com/snehalalita/SQL-Training.git
 * Assignment 3 (11/10/2021) - EmployeeManagementWebApp (ADO.NET), Quiz Maker (Console Application)
+* Assignment 4 (18/10/2021) - Event Management System (ASP.NET Application)
